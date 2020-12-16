@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Game")
+        if(SceneManager.GetActiveScene().name == "Game" || SceneManager.GetActiveScene().name == "MaksymScene")
         {
             keeper = FindObjectOfType<Keeper>();
             goalTrigger = FindObjectOfType<GoalTrigger>();

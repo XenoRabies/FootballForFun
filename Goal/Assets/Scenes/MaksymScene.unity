@@ -1571,6 +1571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4803101761098379651, guid: 86d5ba9038da2ab4d8ef090136518cca, type: 3}
+      propertyPath: goalShootPoint
+      value: 
+      objectReference: {fileID: 989754530}
     - target: {fileID: 4803101761098379653, guid: 86d5ba9038da2ab4d8ef090136518cca, type: 3}
       propertyPath: m_RootOrder
       value: 2

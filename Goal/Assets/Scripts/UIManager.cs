@@ -27,12 +27,4 @@ public class UIManager : MonoBehaviour
     public void LoseAnimation(){
         loseImage.color = initialColor;
     }
-    private void Update(){
-        if(Input.GetKeyDown(KeyCode.E)){
-            WinAnimation();
-        }
-        if(Input.GetKeyDown(KeyCode.F)){
-            LoseAnimation();
-        }
-    }
 }
