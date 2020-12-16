@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
     {
         if (ball != null)
         {
+            ball.GetComponent<BallSqueeze>().PlayAnimation();
             ball.GetComponent<Ball>().moveTowardsGoal = true;
             ballHasBeenShot = true;
             ball = null;
