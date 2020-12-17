@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Keeper keeper;
 
     public UIManager uIManager;
-    private GoalTrigger goalTrigger;
+    public GoalTrigger goalTrigger;
 
     private float goalTimer;
 
