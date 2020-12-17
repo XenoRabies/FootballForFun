@@ -1617,6 +1617,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2068854193027054460, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068854193027054460, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068854193027054462, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068854193027054462, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068854193027054462, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 75.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068854193027054462, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -38
+      objectReference: {fileID: 0}
     - target: {fileID: 4202061461257121849, guid: 72e3a98b5619cdc49bfb3c8acab2b5d1, type: 3}
       propertyPath: m_SizeDelta.x
       value: 795.20496
