@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
 
     public Keeper keeper;
+
+    public UIManager uIManager;
     private GoalTrigger goalTrigger;
 
     private float goalTimer;
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
         {
             keeper = FindObjectOfType<Keeper>();
             goalTrigger = FindObjectOfType<GoalTrigger>();
+            uIManager = FindObjectOfType<UIManager>();
             UIScore = GameObject.Find("Score").GetComponent<Text>();
             UIScore.text = score.ToString();
         }
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Score", score);
             score = 0;
             goalTimer += Time.deltaTime;
+            uIManager.LoseAnimation();
             if(goalTimer > 1.5f)
             {
                 goalTimer = 0;
@@ -55,6 +59,7 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("Score", score);
             goalTimer += Time.deltaTime;
+            uIManager.WinAnimation();
             if(goalTimer > 1.5f)
             {
                 goalTimer = 0;
