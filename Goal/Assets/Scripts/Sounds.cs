@@ -7,6 +7,7 @@ public class Sounds : MonoBehaviour
     private GameManager gameManager;
     private Keeper keeper;
     private Player player;
+    private Ball ball;
     public AudioSource shotSound;
     public AudioSource goalSound;
     public AudioSource missSound;
@@ -18,6 +19,7 @@ public class Sounds : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         player = FindObjectOfType<Player>();
         keeper = FindObjectOfType<Keeper>();
+        ball = FindObjectOfType<Ball>();
     }
     void Update()
     {
@@ -55,6 +57,15 @@ public class Sounds : MonoBehaviour
         {
             crowdVolume += Time.deltaTime;
             crowdSound.mute = false;
+        }
+        if(crowdVolume >= 1)
+        {
+            crowdVolume = 1;
+        }
+
+        if(ball.moveTowardsGoal)
+        {
+            crowdVolume -= Time.deltaTime * 10;
         }
     }
 
