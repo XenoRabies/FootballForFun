@@ -65,7 +65,7 @@ public class Sounds : MonoBehaviour
 
         if(ball.moveTowardsGoal)
         {
-            crowdVolume -= Time.deltaTime * 10;
+            crowdVolume -= Time.deltaTime * 12;
         }
     }
 
