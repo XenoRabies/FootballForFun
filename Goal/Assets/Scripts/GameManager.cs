@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
 
     public Keeper keeper;
-
     public UIManager uIManager;
     public GoalTrigger goalTrigger;
 
